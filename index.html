@@ -1,24 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Yash Atre | Developer Portfolio</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap"
+    rel="stylesheet">
   <style>
     html {
       scroll-behavior: smooth;
     }
+
     body {
       background-color: #0f172a;
       color: #f1f5f9;
-      font-family: 'Courier New', Courier, monospace;
+      font-family: 'Inter', sans-serif;
       overflow-x: hidden;
     }
+
+    h1,
+    h2,
+    h3,
+    .glow-text {
+      font-family: 'Poppins', sans-serif;
+    }
+
     .glow-text {
       text-shadow: 0 0 5px #38bdf8, 0 0 10px #0ea5e9, 0 0 15px #0284c7;
     }
+
     .terminal-box {
       background-color: rgba(30, 41, 59, 0.85);
       border: 2px solid #334155;
@@ -27,6 +40,7 @@
       box-shadow: 0 0 15px #0284c7;
       backdrop-filter: blur(8px);
     }
+
     /* Animated tech background */
     body::before {
       content: "";
@@ -41,12 +55,20 @@
       opacity: 0.2;
       z-index: -1;
     }
+
     @keyframes moveBackground {
-      0% { transform: translate(0,0); }
-      100% { transform: translate(-50px,-50px); }
+      0% {
+        transform: translate(0, 0);
+      }
+
+      100% {
+        transform: translate(-50px, -50px);
+      }
     }
+    
   </style>
 </head>
+
 <body>
 
   <!-- Navbar -->
@@ -54,78 +76,91 @@
     <div class="container mx-auto px-4 py-4 flex justify-between items-center">
       <h1 class="text-xl font-bold text-cyan-400">Yash Atre</h1>
       <nav class="space-x-4 text-sm text-cyan-300">
-       <a href="#home">Home</a>
-       <a href="#about">About</a>
-       <a href="#projects">Projects</a>
-       <a href="#resume">Resume</a>
-       <a href="#contact">Contact</a>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact</a>
       </nav>
     </div>
   </header>
 
-<!-- Hero Section -->
-<section id="home" class="h-screen flex flex-col items-center justify-center pt-20 px-4">
-  <div class="terminal-box text-center" data-aos="fade-up">
-    <h2 class="text-4xl md:text-5xl font-bold mb-4 glow-text">
-      <span id="typed-name"></span>
-    </h2>
-    <p class="text-lg md:text-xl mb-4 text-gray-300">
-      Passionate full-stack developer crafting creative digital solutions.
-    </p>
-    <p class="text-md md:text-lg mb-6 text-gray-400">
-      Skilled in building scalable web apps, integrating AI/ML models, and designing intuitive user experiences.
-      Always eager to tackle complex challenges and deliver impactful results.
-    </p>
-    <a href="#projects" class="inline-block px-6 py-2 bg-cyan-500 hover:bg-cyan-600 text-white rounded transition duration-300">
-      🚀 View My Projects
-    </a>
-  </div>
-</section>
+  <!-- Hero Section -->
+  <section id="home" class="h-screen flex flex-col items-center justify-center pt-20 px-4">
+    <div class="terminal-box text-center" data-aos="fade-up">
+      <h2 class="text-4xl md:text-5xl font-bold mb-4 glow-text">
+        <span id="typed-name"></span>
+      </h2>
+      <p class="text-lg md:text-xl mb-4 text-gray-300">
+        Passionate full-stack developer crafting creative digital solutions.
+      </p>
+      <p class="text-md md:text-lg mb-6 text-gray-400">
+        Skilled in building scalable web apps, integrating AI/ML models, and designing intuitive user experiences.
+        Always eager to tackle complex challenges and deliver impactful results.
+      </p>
+      <a href="#projects"
+        class="inline-block px-6 py-2 bg-cyan-500 hover:bg-cyan-600 text-white rounded transition duration-300">
+        🚀 View My Projects
+      </a>
+    </div>
+  </section>
 
   <!-- About Section -->
-<section id="about" class="min-h-screen flex items-center justify-center pt-28 px-6 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900">
-  <div class="max-w-4xl text-center terminal-box relative overflow-hidden" data-aos="fade-up">
-    
-    <!-- Decorative Background Elements -->
-    <div class="absolute -top-10 -right-10 w-40 h-40 bg-cyan-500 rounded-full opacity-10 blur-3xl"></div>
-    <div class="absolute bottom-0 left-0 w-52 h-52 bg-blue-600 rounded-full opacity-10 blur-3xl"></div>
+  <section id="about"
+    class="min-h-screen flex items-center justify-center pt-28 px-6 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900">
+    <div class="max-w-4xl text-center terminal-box relative overflow-hidden" data-aos="fade-up">
 
-    <h2 class="text-4xl md:text-5xl font-bold mb-6 glow-text">About Me</h2>
-    
-    <p class="text-lg text-gray-300 mb-4">
-      I’m <strong class="text-cyan-400">Yash Atre</strong>, a passionate and driven <span class="text-cyan-300 font-semibold">Computer Science Engineer</span> 
-      currently pursuing my <strong>B.Tech</strong> at <span class="text-cyan-300">MGM College of Engineering, Nanded</span>.  
-      With a diploma in IT from <strong>Government Polytechnic College</strong> and a strong academic foundation, I specialize in transforming innovative ideas into impactful digital solutions.
-    </p>
+      <!-- Decorative Background Elements -->
+      <div class="absolute -top-10 -right-10 w-40 h-40 bg-cyan-500 rounded-full opacity-10 blur-3xl"></div>
+      <div class="absolute bottom-0 left-0 w-52 h-52 bg-blue-600 rounded-full opacity-10 blur-3xl"></div>
 
-    <p class="text-lg text-gray-300 mb-4">
-      My journey in tech has led me to work on diverse projects including:
-    </p>
-    <ul class="text-left text-gray-300 mb-6 list-disc list-inside space-y-2">
-      <li>🔬 <strong>Lung Cancer Detection</strong> using Python, Flask, and a Hybrid VGG16+ANN model — achieving <span class="text-cyan-300 font-semibold">99.52% accuracy</span>.</li>
-      <li>🤖 <strong>JARVIS</strong> — a voice-activated virtual assistant leveraging speech recognition and AI-powered responses.</li>
-      <li>🛒 <strong>Home Décor E-Commerce Website</strong> — a responsive, feature-rich platform for product browsing and cart management.</li>
-      <li>🌦️ <strong>Weather Web App</strong> — real-time weather updates with interactive maps using OpenWeatherMap API & Leaflet.js.</li>
-    </ul>
+      <h2 class="text-4xl md:text-5xl font-bold mb-6 glow-text">About Me</h2>
 
-    <p class="text-lg text-gray-300 mb-4">
-      I’m proficient in <strong>C++</strong>, <strong>Java</strong>, <strong>JavaScript</strong>, <strong>HTML/CSS</strong>, <strong>Tailwind CSS</strong>, <strong>PHP</strong>, and tools like 
-      <strong>GitHub</strong>, <strong>MySQL</strong>, and <strong>VS Code</strong>. My interests span <span class="text-cyan-300">Full-Stack Development</span>, 
-      <span class="text-cyan-300">AI/ML</span>, and <span class="text-cyan-300">IoT with Arduino</span>.
-    </p>
+      <p class="text-lg text-gray-300 mb-4">
+        I’m <strong class="text-cyan-400">Yash Atre</strong>, a passionate and driven <span
+          class="text-cyan-300 font-semibold">Computer Science Engineer</span>
+        currently pursuing my <strong>B.Tech</strong> at <span class="text-cyan-300">MGM College of Engineering,
+          Nanded</span>.
+        With a diploma in IT from <strong>Government Polytechnic College</strong> and a strong academic foundation, I
+        specialize in transforming innovative ideas into impactful digital solutions.
+      </p>
 
-    <p class="text-lg text-gray-300 mb-6">
-      Beyond coding, I’m inspired by leaders like <strong>A.P.J. Abdul Kalam</strong> and actively contribute to my college as a 
-      <strong>Training & Placement Coordinator</strong>, mentoring peers and fostering a learning-driven community.
-    </p>
+      <p class="text-lg text-gray-300 mb-4">
+        My journey in tech has led me to work on diverse projects including:
+      </p>
+      <ul class="text-left text-gray-300 mb-6 list-disc list-inside space-y-2">
+        <li>🔬 <strong>Lung Cancer Detection</strong> using Python, Flask, and a Hybrid VGG16+ANN model — achieving
+          <span class="text-cyan-300 font-semibold">99.52% accuracy</span>.</li>
+        <li>🤖 <strong>JARVIS</strong> — a voice-activated virtual assistant leveraging speech recognition and
+          AI-powered responses.</li>
+        <li>🛒 <strong>Home Décor E-Commerce Website</strong> — a responsive, feature-rich platform for product browsing
+          and cart management.</li>
+        <li>🌦️ <strong>Weather Web App</strong> — real-time weather updates with interactive maps using OpenWeatherMap
+          API & Leaflet.js.</li>
+      </ul>
 
-    <p class="text-lg text-gray-300">
-      💼 <a href="#resume" class="text-cyan-400 underline hover:text-white transition">Check out my resume</a>
-    </p>
+      <p class="text-lg text-gray-300 mb-4">
+        I’m proficient in <strong>C++</strong>, <strong>Java</strong>, <strong>JavaScript</strong>,
+        <strong>HTML/CSS</strong>, <strong>Tailwind CSS</strong>, <strong>PHP</strong>, and tools like
+        <strong>GitHub</strong>, <strong>MySQL</strong>, and <strong>VS Code</strong>. My interests span <span
+          class="text-cyan-300">Full-Stack Development</span>,
+        <span class="text-cyan-300">AI/ML</span>, and <span class="text-cyan-300">IoT with Arduino</span>.
+      </p>
 
-  </div>
-</section>
-<!-- Projects Section -->
+      <p class="text-lg text-gray-300 mb-6">
+        Beyond coding, I’m inspired by leaders like <strong>A.P.J. Abdul Kalam</strong> and actively contribute to my
+        college as a
+        <strong>Training & Placement Coordinator</strong>, mentoring peers and fostering a learning-driven community.
+      </p>
+
+      <p class="text-lg text-gray-300">
+        💼 <a href="#resume" class="text-cyan-400 underline hover:text-white transition">Check out my resume</a>
+      </p>
+
+    </div>
+  </section>
+  <!-- Projects Section -->
+  <!-- Projects Section -->
 <section id="projects" class="min-h-screen pt-28 pb-16 px-6 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900">
   <div class="max-w-6xl mx-auto text-center" data-aos="fade-up">
 
@@ -133,51 +168,73 @@
 
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-10">
 
-      <!-- Project Card Template -->
+      <!-- Project 1 -->
       <div class="project-card relative backdrop-blur-lg bg-opacity-20" data-aos="fade-up">
         <div class="absolute inset-0 rounded-xl border border-cyan-500 opacity-20"></div>
         <h3 class="text-2xl font-semibold mb-3 text-cyan-400">Lung Cancer Detection</h3>
         <p class="text-gray-300 mb-6 text-sm leading-relaxed">
           A Flask-based diagnostic tool using a Hybrid VGG16 + ANN deep learning model, detecting lung cancer subtypes
-          with <span class="text-cyan-300 font-semibold">99.52% accuracy</span> from CT scans.  
-          Includes preprocessing (filtering, segmentation, LDA) and secure user login for scan history tracking.
+          with <span class="text-cyan-300 font-semibold">99.52% accuracy</span>.
         </p>
-        <a href="https://github.com/YASHATRE10/Lung-Cancer-Detection" target="_blank"
-           class="px-4 py-2 bg-cyan-500 hover:bg-cyan-600 text-white rounded shadow-lg transition">🔗 View on GitHub</a>
+        <a href="https://github.com/YASHATRE10/Lung-Cancer-Detection-System"
+           target="_blank" rel="noopener noreferrer"
+           class="flex items-center justify-center gap-2 px-4 py-2 bg-cyan-500 hover:bg-cyan-600 text-white rounded shadow-lg transition duration-300 transform hover:scale-105">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.09 3.29 9.4 7.86 10.94.58.11.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.53-1.34-1.3-1.7-1.3-1.7-1.06-.72.08-.71.08-.71 1.18.08 1.8 1.21 1.8 1.21 1.04 1.78 2.74 1.27 3.4.97.11-.76.41-1.27.75-1.56-2.55-.29-5.23-1.28-5.23-5.68 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.45.11-3.02 0 0 .98-.31 3.21 1.18a11.2 11.2 0 012.92-.39c.99 0 1.99.13 2.92.39 2.22-1.49 3.21-1.18 3.21-1.18.63 1.57.23 2.73.11 3.02.74.81 1.19 1.84 1.19 3.1 0 4.41-2.69 5.39-5.25 5.67.42.36.8 1.07.8 2.16 0 1.56-.01 2.81-.01 3.19 0 .31.21.68.8.56A10.51 10.51 0 0023.5 12C23.5 5.65 18.35.5 12 .5z"/>
+          </svg>
+          View on GitHub
+        </a>
       </div>
 
+      <!-- Project 2 -->
       <div class="project-card relative backdrop-blur-lg bg-opacity-20" data-aos="fade-up" data-aos-delay="100">
         <div class="absolute inset-0 rounded-xl border border-cyan-500 opacity-20"></div>
         <h3 class="text-2xl font-semibold mb-3 text-cyan-400">JARVIS - Voice Assistant</h3>
         <p class="text-gray-300 mb-6 text-sm leading-relaxed">
-          A browser-based virtual assistant using Speech Recognition & Synthesis APIs.  
-          Executes voice commands, opens websites, tells date/time, and delivers personalized greetings in real-time.
+          A browser-based virtual assistant using Speech Recognition & Synthesis APIs.
         </p>
-        <a href="https://github.com/YASHATRE10/JARVIS-Voice-Assistant" target="_blank"
-           class="px-4 py-2 bg-cyan-500 hover:bg-cyan-600 text-white rounded shadow-lg transition">🔗 View on GitHub</a>
+        <a href="https://github.com/YASHATRE10/jarvis"
+           target="_blank" rel="noopener noreferrer"
+           class="flex items-center justify-center gap-2 px-4 py-2 bg-cyan-500 hover:bg-cyan-600 text-white rounded shadow-lg transition duration-300 transform hover:scale-105">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.09 3.29 9.4 7.86 10.94.58.11.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.53-1.34-1.3-1.7-1.3-1.7-1.06-.72.08-.71.08-.71 1.18.08 1.8 1.21 1.8 1.21 1.04 1.78 2.74 1.27 3.4.97.11-.76.41-1.27.75-1.56-2.55-.29-5.23-1.28-5.23-5.68 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.45.11-3.02 0 0 .98-.31 3.21 1.18a11.2 11.2 0 012.92-.39c.99 0 1.99.13 2.92.39 2.22-1.49 3.21-1.18 3.21-1.18.63 1.57.23 2.73.11 3.02.74.81 1.19 1.84 1.19 3.1 0 4.41-2.69 5.39-5.25 5.67.42.36.8 1.07.8 2.16 0 1.56-.01 2.81-.01 3.19 0 .31.21.68.8.56A10.51 10.51 0 0023.5 12C23.5 5.65 18.35.5 12 .5z"/>
+          </svg>
+          View on GitHub
+        </a>
       </div>
 
+      <!-- Project 3 -->
       <div class="project-card relative backdrop-blur-lg bg-opacity-20" data-aos="fade-up" data-aos-delay="200">
         <div class="absolute inset-0 rounded-xl border border-cyan-500 opacity-20"></div>
         <h3 class="text-2xl font-semibold mb-3 text-cyan-400">HomeDecor E-Commerce</h3>
         <p class="text-gray-300 mb-6 text-sm leading-relaxed">
-          An e-commerce platform for home décor items with a responsive UI, product catalog, and  
-          <span class="text-cyan-300 font-semibold">real-time shopping cart</span>.  
-          Built with HTML, CSS, JavaScript, PHP, and MySQL.
+          An e-commerce platform for home décor items with a responsive UI and cart management.
         </p>
-        <a href="https://github.com/YASHATRE10/HomeDecor-Ecommerce" target="_blank"
-           class="px-4 py-2 bg-cyan-500 hover:bg-cyan-600 text-white rounded shadow-lg transition">🔗 View on GitHub</a>
+        <a href="https://github.com/YASHATRE10/HomeDecor"
+           target="_blank" rel="noopener noreferrer"
+           class="flex items-center justify-center gap-2 px-4 py-2 bg-cyan-500 hover:bg-cyan-600 text-white rounded shadow-lg transition duration-300 transform hover:scale-105">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.09 3.29 9.4 7.86 10.94.58.11.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.53-1.34-1.3-1.7-1.3-1.7-1.06-.72.08-.71.08-.71 1.18.08 1.8 1.21 1.8 1.21 1.04 1.78 2.74 1.27 3.4.97.11-.76.41-1.27.75-1.56-2.55-.29-5.23-1.28-5.23-5.68 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.45.11-3.02 0 0 .98-.31 3.21 1.18a11.2 11.2 0 012.92-.39c.99 0 1.99.13 2.92.39 2.22-1.49 3.21-1.18 3.21-1.18.63 1.57.23 2.73.11 3.02.74.81 1.19 1.84 1.19 3.1 0 4.41-2.69 5.39-5.25 5.67.42.36.8 1.07.8 2.16 0 1.56-.01 2.81-.01 3.19 0 .31.21.68.8.56A10.51 10.51 0 0023.5 12C23.5 5.65 18.35.5 12 .5z"/>
+          </svg>
+          View on GitHub
+        </a>
       </div>
 
+      <!-- Project 4 -->
       <div class="project-card relative backdrop-blur-lg bg-opacity-20" data-aos="fade-up" data-aos-delay="300">
         <div class="absolute inset-0 rounded-xl border border-cyan-500 opacity-20"></div>
         <h3 class="text-2xl font-semibold mb-3 text-cyan-400">Weather Web App</h3>
         <p class="text-gray-300 mb-6 text-sm leading-relaxed">
-          Real-time weather app integrated with <span class="text-cyan-300 font-semibold">OpenWeatherMap API</span> & Leaflet.js.  
-          Features location-based weather, AQI, and authentication with PHP sessions.
+          Real-time weather app integrated with OpenWeatherMap API & Leaflet.js.
         </p>
-        <a href="https://github.com/YASHATRE10/Weather-Web-App" target="_blank"
-           class="px-4 py-2 bg-cyan-500 hover:bg-cyan-600 text-white rounded shadow-lg transition">🔗 View on GitHub</a>
+        <a href="https://github.com/YASHATRE10/Weather-application"
+           target="_blank" rel="noopener noreferrer"
+           class="flex items-center justify-center gap-2 px-4 py-2 bg-cyan-500 hover:bg-cyan-600 text-white rounded shadow-lg transition duration-300 transform hover:scale-105">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.09 3.29 9.4 7.86 10.94.58.11.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.53-1.34-1.3-1.7-1.3-1.7-1.06-.72.08-.71.08-.71 1.18.08 1.8 1.21 1.8 1.21 1.04 1.78 2.74 1.27 3.4.97.11-.76.41-1.27.75-1.56-2.55-.29-5.23-1.28-5.23-5.68 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.45.11-3.02 0 0 .98-.31 3.21 1.18a11.2 11.2 0 012.92-.39c.99 0 1.99.13 2.92.39 2.22-1.49 3.21-1.18 3.21-1.18.63 1.57.23 2.73.11 3.02.74.81 1.19 1.84 1.19 3.1 0 4.41-2.69 5.39-5.25 5.67.42.36.8 1.07.8 2.16 0 1.56-.01 2.81-.01 3.19 0 .31.21.68.8.56A10.51 10.51 0 0023.5 12C23.5 5.65 18.35.5 12 .5z"/>
+          </svg>
+          View on GitHub
+        </a>
       </div>
 
     </div>
@@ -197,31 +254,36 @@
     box-shadow: 0 0 18px rgba(6, 182, 212, 0.9);
   }
 </style>
-<!-- Resume Section -->
-<section id="resume" class="pt-28 px-6 pb-16 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 min-h-screen flex flex-col items-center">
-  <div class="max-w-6xl w-full text-center" data-aos="fade-up">
-    <h2 class="text-4xl md:text-5xl font-bold mb-6 glow-text">📄 My Resume</h2>
 
-    <!-- Download Button -->
-    <a href="assets/Yash_CV.pdf" download
-       class="inline-block mb-8 px-6 py-2 bg-cyan-500 hover:bg-cyan-600 text-white rounded-lg shadow-lg transition duration-300">
-      📥 Download Resume
-    </a>
+  </style>
+  <!-- Resume Section -->
+  <section id="resume"
+    class="pt-28 px-6 pb-16 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 min-h-screen flex flex-col items-center">
+    <div class="max-w-6xl w-full text-center" data-aos="fade-up">
+      <h2 class="text-4xl md:text-5xl font-bold mb-6 glow-text">📄 My Resume</h2>
 
-    <!-- PDF Viewer -->
-    <div class="pdf-container w-full max-w-5xl mx-auto border border-cyan-600 rounded-lg shadow-lg overflow-hidden" style="height: 80vh;">
-      <iframe src="assets/Yash_CV.pdf" width="100%" height="100%" style="border:none;"></iframe>
+      <!-- Download Button -->
+      <a href="assets/Yash_CV.pdf" download
+        class="inline-block mb-8 px-6 py-2 bg-cyan-500 hover:bg-cyan-600 text-white rounded-lg shadow-lg transition duration-300">
+        📥 Download Resume
+      </a>
+
+      <!-- PDF Viewer -->
+      <div class="pdf-container w-full max-w-5xl mx-auto border border-cyan-600 rounded-lg shadow-lg overflow-hidden"
+        style="height: 80vh;">
+        <iframe src="assets/Yash_CV.pdf" width="100%" height="100%" style="border:none;"></iframe>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<style>
-  .pdf-container {
-    box-shadow: 0 0 15px rgba(6, 182, 212, 0.5);
-    background: rgba(30, 41, 59, 0.8);
-  }
-</style>
-<!-- Contact Section -->
+  <style>
+    .pdf-container {
+      box-shadow: 0 0 15px rgba(6, 182, 212, 0.5);
+      background: rgba(30, 41, 59, 0.8);
+    }
+  </style>
+  <!-- Contact Section -->
+  <!-- Contact Section -->
 <section id="contact" class="pt-28 pb-16 px-6 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 min-h-screen flex flex-col items-center">
   <div class="max-w-4xl w-full text-center" data-aos="fade-up">
     <h2 class="text-4xl md:text-5xl font-bold mb-6 glow-text">📬 Get in Touch</h2>
@@ -231,84 +293,116 @@
           class="relative bg-gray-800 bg-opacity-40 p-8 rounded-2xl shadow-2xl border border-cyan-600 backdrop-blur-md space-y-6"
           onsubmit="sendEmail(event)">
 
-      <!-- Floating labels -->
       <div class="relative">
-        <input type="text" name="name" id="name" placeholder=" " 
-               class="peer w-full p-4 rounded-lg bg-transparent border border-gray-600 text-white focus:border-cyan-400 focus:ring focus:ring-cyan-500/40 outline-none transition" required>
-        <label for="name" class="absolute left-4 top-4 text-gray-400 text-sm transition-all peer-placeholder-shown:top-5 peer-placeholder-shown:text-gray-500 peer-placeholder-shown:text-base peer-focus:top-2 peer-focus:text-cyan-400">Your Name</label>
+        <input type="text" name="name" id="name" placeholder="Your Name"
+               class="peer w-full p-4 rounded-lg bg-transparent border border-gray-600 text-white
+                      focus:border-cyan-400 focus:ring focus:ring-cyan-500/40 outline-none transition" required>
+        <label for="name"
+               class="absolute left-4 top-4 text-gray-400 text-sm transition-all pointer-events-none"></label>
       </div>
 
       <div class="relative">
-        <input type="email" name="email" id="email" placeholder=" " 
-               class="peer w-full p-4 rounded-lg bg-transparent border border-gray-600 text-white focus:border-cyan-400 focus:ring focus:ring-cyan-500/40 outline-none transition" required>
-        <label for="email" class="absolute left-4 top-4 text-gray-400 text-sm transition-all peer-placeholder-shown:top-5 peer-placeholder-shown:text-gray-500 peer-placeholder-shown:text-base peer-focus:top-2 peer-focus:text-cyan-400">Your Email</label>
+        <input type="email" name="email" id="email" placeholder="Your Email"
+               class="peer w-full p-4 rounded-lg bg-transparent border border-gray-600 text-white
+                      focus:border-cyan-400 focus:ring focus:ring-cyan-500/40 outline-none transition" required>
+        <label for="email"
+               class="absolute left-4 top-4 text-gray-400 text-sm transition-all pointer-events-none"></label>
       </div>
 
       <div class="relative">
-        <input type="text" name="subject" id="subject" placeholder=" " 
-               class="peer w-full p-4 rounded-lg bg-transparent border border-gray-600 text-white focus:border-cyan-400 focus:ring focus:ring-cyan-500/40 outline-none transition" required>
-        <label for="subject" class="absolute left-4 top-4 text-gray-400 text-sm transition-all peer-placeholder-shown:top-5 peer-placeholder-shown:text-gray-500 peer-placeholder-shown:text-base peer-focus:top-2 peer-focus:text-cyan-400">Subject</label>
+        <input type="text" name="subject" id="subject" placeholder="Subject"
+               class="peer w-full p-4 rounded-lg bg-transparent border border-gray-600 text-white
+                      focus:border-cyan-400 focus:ring focus:ring-cyan-500/40 outline-none transition" required>
+        <label for="subject"
+               class="absolute left-4 top-4 text-gray-400 text-sm transition-all pointer-events-none"></label>
       </div>
 
       <div class="relative">
-        <textarea name="message" id="message" placeholder=" " rows="5"
-                  class="peer w-full p-4 rounded-lg bg-transparent border border-gray-600 text-white focus:border-cyan-400 focus:ring focus:ring-cyan-500/40 outline-none transition resize-none" required></textarea>
-        <label for="message" class="absolute left-4 top-4 text-gray-400 text-sm transition-all peer-placeholder-shown:top-5 peer-placeholder-shown:text-gray-500 peer-placeholder-shown:text-base peer-focus:top-2 peer-focus:text-cyan-400">Your Message</label>
+        <textarea name="message" id="message" placeholder="Your Message" rows="5"
+                  class="peer w-full p-4 rounded-lg bg-transparent border border-gray-600 text-white
+                         focus:border-cyan-400 focus:ring focus:ring-cyan-500/40 outline-none transition resize-none" required></textarea>
+        <label for="message"
+               class="absolute left-4 top-4 text-gray-400 text-sm transition-all pointer-events-none"></label>
       </div>
 
-      <!-- Submit Button -->
       <button type="submit" 
               class="w-full py-3 rounded-lg bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-white font-semibold shadow-lg transform hover:scale-[1.02] transition">
         🚀 Send Message
       </button>
     </form>
 
-    <!-- Status Message -->
     <p id="status" class="mt-4 text-sm text-gray-400"></p>
   </div>
 </section>
 
-<script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.6.4/dist/email.min.js"></script>
-<script>
-  (function() {
-    emailjs.init("XiqslDrb6nPxE2U6G"); // Public Key
-  })();
+<style>
+/* Hide label when field has value */
+input:not(:placeholder-shown) + label,
+textarea:not(:placeholder-shown) + label {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: all 0.2s ease;
+}
 
-  function sendEmail(e) {
-    e.preventDefault();
-    const form = document.getElementById("contact-form");
-    emailjs.sendForm("service_u812slr", "template_816w6nq", form)
-      .then(() => {
-        document.getElementById("status").textContent = "✅ Message sent successfully!";
-        form.reset();
-      }, () => {
-        document.getElementById("status").textContent = "❌ Failed to send message. Try again later.";
-      });
-  }
-</script>
+/* Label visible when empty or focused */
+input:placeholder-shown + label,
+textarea:placeholder-shown + label,
+input:focus + label,
+textarea:focus + label {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+</style>
+
+      <!-- Status Message -->
+      <p id="status" class="mt-4 text-sm text-gray-400"></p>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.6.4/dist/email.min.js"></script>
+  <script>
+    (function () {
+      emailjs.init("XiqslDrb6nPxE2U6G"); // Public Key
+    })();
+
+    function sendEmail(e) {
+      e.preventDefault();
+      const form = document.getElementById("contact-form");
+      emailjs.sendForm("service_u812slr", "template_816w6nq", form)
+        .then(() => {
+          document.getElementById("status").textContent = "✅ Message sent successfully!";
+          form.reset();
+        }, () => {
+          document.getElementById("status").textContent = "❌ Failed to send message. Try again later.";
+        });
+    }
+  </script>
 
 
   <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
-  AOS.init();
+    AOS.init();
 
-  var typed = new Typed("#typed-name", {
-    strings: [
-      "Hi, I'm Yash Atre 👨‍💻",
-      "Full-Stack Developer 🚀",
-      "AI & ML Enthusiast 🤖"
-    ],
-    typeSpeed: 80,         // Speed for typing
-    backSpeed: 40,         // Speed for erasing
-    backDelay: 1200,       // Pause before erasing
-    startDelay: 300,       // Initial delay before start
-    loop: true,
-    showCursor: true,
-    cursorChar: "|"
-  });
-</script>
+    var typed = new Typed("#typed-name", {
+      strings: [
+        "Hi, I'm Yash Atre 👨‍💻",
+        "Full-Stack Developer 🚀",
+        "AI & ML Enthusiast 🤖"
+      ],
+      typeSpeed: 80,         // Speed for typing
+      backSpeed: 40,         // Speed for erasing
+      backDelay: 1200,       // Pause before erasing
+      startDelay: 300,       // Initial delay before start
+      loop: true,
+      showCursor: true,
+      cursorChar: "|"
+    });
+  </script>
 
 </body>
+
 </html>

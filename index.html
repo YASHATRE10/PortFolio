@@ -65,7 +65,6 @@
         transform: translate(-50px, -50px);
       }
     }
-    
   </style>
 </head>
 
@@ -75,12 +74,35 @@
   <header class="bg-gray-900 shadow fixed w-full z-50">
     <div class="container mx-auto px-4 py-4 flex justify-between items-center">
       <h1 class="text-xl font-bold text-cyan-400">Yash Atre</h1>
-      <nav class="space-x-4 text-sm text-cyan-300">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#resume">Resume</a>
-        <a href="#contact">Contact</a>
+
+      <!-- Navigation Links -->
+      <nav class="flex items-center space-x-4 text-sm text-cyan-300">
+        <a href="#home" class="hover:text-white transition">Home</a>
+        <a href="#about" class="hover:text-white transition">About</a>
+        <a href="#projects" class="hover:text-white transition">Projects</a>
+        <a href="#resume" class="hover:text-white transition">Resume</a>
+        <a href="#contact" class="hover:text-white transition">Contact</a>
+
+        <!-- Divider -->
+        <span class="w-px h-5 bg-gray-600 mx-2"></span>
+
+        <!-- GitHub -->
+        <a href="https://github.com/YASHATRE10" target="_blank" rel="noopener noreferrer"
+          class="text-gray-400 hover:text-cyan-400 transition transform hover:scale-110">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+            <path
+              d="M12 .5C5.65.5.5 5.65.5 12c0 5.09 3.29 9.4 7.86 10.94.58.11.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.53-1.34-1.3-1.7-1.3-1.7-1.06-.72.08-.71.08-.71 1.18.08 1.8 1.21 1.8 1.21 1.04 1.78 2.74 1.27 3.4.97.11-.76.41-1.27.75-1.56-2.55-.29-5.23-1.28-5.23-5.68 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.45.11-3.02 0 0 .98-.31 3.21 1.18a11.2 11.2 0 012.92-.39c.99 0 1.99.13 2.92.39 2.22-1.49 3.21-1.18 3.21-1.18.63 1.57.23 2.73.11 3.02.74.81 1.19 1.84 1.19 3.1 0 4.41-2.69 5.39-5.25 5.67.42.36.8 1.07.8 2.16 0 1.56-.01 2.81-.01 3.19 0 .31.21.68.8.56A10.51 10.51 0 0023.5 12C23.5 5.65 18.35.5 12 .5z" />
+          </svg>
+        </a>
+
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com/in/yashatre10" target="_blank" rel="noopener noreferrer"
+          class="text-gray-400 hover:text-cyan-400 transition transform hover:scale-110">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+            <path
+              d="M19 0h-14C2.24 0 0 2.24 0 5v14c0 2.76 2.24 5 5 5h14c2.77 0 5-2.24 5-5V5c0-2.76-2.23-5-5-5zM8.54 19H5.4V8.91h3.14V19zM6.97 7.69c-1.01 0-1.83-.82-1.83-1.83S5.96 4.03 6.97 4.03c1.01 0 1.83.82 1.83 1.83s-.82 1.83-1.83 1.83zm12.03 11.31h-3.14v-4.93c0-1.18-.02-2.7-1.64-2.7-1.64 0-1.89 1.28-1.89 2.6V19h-3.14V8.91h3.01v1.38h.04c.42-.79 1.44-1.63 2.96-1.63 3.16 0 3.74 2.08 3.74 4.78V19z" />
+          </svg>
+        </a>
       </nav>
     </div>
   </header>
@@ -130,7 +152,8 @@
       </p>
       <ul class="text-left text-gray-300 mb-6 list-disc list-inside space-y-2">
         <li>🔬 <strong>Lung Cancer Detection</strong> using Python, Flask, and a Hybrid VGG16+ANN model — achieving
-          <span class="text-cyan-300 font-semibold">99.52% accuracy</span>.</li>
+          <span class="text-cyan-300 font-semibold">99.52% accuracy</span>.
+        </li>
         <li>🤖 <strong>JARVIS</strong> — a voice-activated virtual assistant leveraging speech recognition and
           AI-powered responses.</li>
         <li>🛒 <strong>Home Décor E-Commerce Website</strong> — a responsive, feature-rich platform for product browsing
@@ -161,204 +184,216 @@
   </section>
   <!-- Projects Section -->
   <!-- Projects Section -->
-<section id="projects" class="min-h-screen pt-28 pb-16 px-6 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900">
-  <div class="max-w-6xl mx-auto text-center" data-aos="fade-up">
+  <section id="projects" class="min-h-screen pt-28 pb-16 px-6 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900">
+    <div class="max-w-6xl mx-auto text-center" data-aos="fade-up">
 
-    <h2 class="text-4xl md:text-5xl font-bold mb-14 glow-text">🚀 Projects</h2>
+      <h2 class="text-4xl md:text-5xl font-bold mb-14 glow-text">🚀 Projects</h2>
 
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-10">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-10">
 
-      <!-- Project 1 -->
-      <div class="project-card relative backdrop-blur-lg bg-opacity-20" data-aos="fade-up">
-        <div class="absolute inset-0 rounded-xl border border-cyan-500 opacity-20"></div>
-        <h3 class="text-2xl font-semibold mb-3 text-cyan-400">Lung Cancer Detection</h3>
-        <p class="text-gray-300 mb-6 text-sm leading-relaxed">
-          A Flask-based diagnostic tool using a Hybrid VGG16 + ANN deep learning model, detecting lung cancer subtypes
-          with <span class="text-cyan-300 font-semibold">99.52% accuracy</span>.
-        </p>
-        <a href="https://github.com/YASHATRE10/Lung-Cancer-Detection-System"
-           target="_blank" rel="noopener noreferrer"
-           class="flex items-center justify-center gap-2 px-4 py-2 bg-cyan-500 hover:bg-cyan-600 text-white rounded shadow-lg transition duration-300 transform hover:scale-105">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
-            <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.09 3.29 9.4 7.86 10.94.58.11.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.53-1.34-1.3-1.7-1.3-1.7-1.06-.72.08-.71.08-.71 1.18.08 1.8 1.21 1.8 1.21 1.04 1.78 2.74 1.27 3.4.97.11-.76.41-1.27.75-1.56-2.55-.29-5.23-1.28-5.23-5.68 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.45.11-3.02 0 0 .98-.31 3.21 1.18a11.2 11.2 0 012.92-.39c.99 0 1.99.13 2.92.39 2.22-1.49 3.21-1.18 3.21-1.18.63 1.57.23 2.73.11 3.02.74.81 1.19 1.84 1.19 3.1 0 4.41-2.69 5.39-5.25 5.67.42.36.8 1.07.8 2.16 0 1.56-.01 2.81-.01 3.19 0 .31.21.68.8.56A10.51 10.51 0 0023.5 12C23.5 5.65 18.35.5 12 .5z"/>
-          </svg>
-          View on GitHub
-        </a>
-      </div>
+        <!-- Project 1 -->
+        <div class="project-card relative backdrop-blur-lg bg-opacity-20" data-aos="fade-up">
+          <div class="absolute inset-0 rounded-xl border border-cyan-500 opacity-20"></div>
+          <h3 class="text-2xl font-semibold mb-3 text-cyan-400">Lung Cancer Detection</h3>
+          <p class="text-gray-300 mb-6 text-sm leading-relaxed">
+            A Flask-based diagnostic tool using a Hybrid VGG16 + ANN deep learning model, detecting lung cancer subtypes
+            with <span class="text-cyan-300 font-semibold">99.52% accuracy</span>.
+          </p>
+          <a href="https://github.com/YASHATRE10/Lung-Cancer-Detection-System" target="_blank" rel="noopener noreferrer"
+            class="flex items-center justify-center gap-2 px-4 py-2 bg-cyan-500 hover:bg-cyan-600 text-white rounded shadow-lg transition duration-300 transform hover:scale-105">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M12 .5C5.65.5.5 5.65.5 12c0 5.09 3.29 9.4 7.86 10.94.58.11.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.53-1.34-1.3-1.7-1.3-1.7-1.06-.72.08-.71.08-.71 1.18.08 1.8 1.21 1.8 1.21 1.04 1.78 2.74 1.27 3.4.97.11-.76.41-1.27.75-1.56-2.55-.29-5.23-1.28-5.23-5.68 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.45.11-3.02 0 0 .98-.31 3.21 1.18a11.2 11.2 0 012.92-.39c.99 0 1.99.13 2.92.39 2.22-1.49 3.21-1.18 3.21-1.18.63 1.57.23 2.73.11 3.02.74.81 1.19 1.84 1.19 3.1 0 4.41-2.69 5.39-5.25 5.67.42.36.8 1.07.8 2.16 0 1.56-.01 2.81-.01 3.19 0 .31.21.68.8.56A10.51 10.51 0 0023.5 12C23.5 5.65 18.35.5 12 .5z" />
+            </svg>
+            View on GitHub
+          </a>
+        </div>
 
-      <!-- Project 2 -->
-      <div class="project-card relative backdrop-blur-lg bg-opacity-20" data-aos="fade-up" data-aos-delay="100">
-        <div class="absolute inset-0 rounded-xl border border-cyan-500 opacity-20"></div>
-        <h3 class="text-2xl font-semibold mb-3 text-cyan-400">JARVIS - Voice Assistant</h3>
-        <p class="text-gray-300 mb-6 text-sm leading-relaxed">
-          A browser-based virtual assistant using Speech Recognition & Synthesis APIs.
-        </p>
-        <a href="https://github.com/YASHATRE10/jarvis"
-           target="_blank" rel="noopener noreferrer"
-           class="flex items-center justify-center gap-2 px-4 py-2 bg-cyan-500 hover:bg-cyan-600 text-white rounded shadow-lg transition duration-300 transform hover:scale-105">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
-            <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.09 3.29 9.4 7.86 10.94.58.11.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.53-1.34-1.3-1.7-1.3-1.7-1.06-.72.08-.71.08-.71 1.18.08 1.8 1.21 1.8 1.21 1.04 1.78 2.74 1.27 3.4.97.11-.76.41-1.27.75-1.56-2.55-.29-5.23-1.28-5.23-5.68 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.45.11-3.02 0 0 .98-.31 3.21 1.18a11.2 11.2 0 012.92-.39c.99 0 1.99.13 2.92.39 2.22-1.49 3.21-1.18 3.21-1.18.63 1.57.23 2.73.11 3.02.74.81 1.19 1.84 1.19 3.1 0 4.41-2.69 5.39-5.25 5.67.42.36.8 1.07.8 2.16 0 1.56-.01 2.81-.01 3.19 0 .31.21.68.8.56A10.51 10.51 0 0023.5 12C23.5 5.65 18.35.5 12 .5z"/>
-          </svg>
-          View on GitHub
-        </a>
-      </div>
+        <!-- Project 2 -->
+        <div class="project-card relative backdrop-blur-lg bg-opacity-20" data-aos="fade-up" data-aos-delay="100">
+          <div class="absolute inset-0 rounded-xl border border-cyan-500 opacity-20"></div>
+          <h3 class="text-2xl font-semibold mb-3 text-cyan-400">JARVIS - Voice Assistant</h3>
+          <p class="text-gray-300 mb-6 text-sm leading-relaxed">
+            A browser-based virtual assistant using Speech Recognition & Synthesis APIs.
+          </p>
+          <a href="https://github.com/YASHATRE10/jarvis" target="_blank" rel="noopener noreferrer"
+            class="flex items-center justify-center gap-2 px-4 py-2 bg-cyan-500 hover:bg-cyan-600 text-white rounded shadow-lg transition duration-300 transform hover:scale-105">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M12 .5C5.65.5.5 5.65.5 12c0 5.09 3.29 9.4 7.86 10.94.58.11.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.53-1.34-1.3-1.7-1.3-1.7-1.06-.72.08-.71.08-.71 1.18.08 1.8 1.21 1.8 1.21 1.04 1.78 2.74 1.27 3.4.97.11-.76.41-1.27.75-1.56-2.55-.29-5.23-1.28-5.23-5.68 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.45.11-3.02 0 0 .98-.31 3.21 1.18a11.2 11.2 0 012.92-.39c.99 0 1.99.13 2.92.39 2.22-1.49 3.21-1.18 3.21-1.18.63 1.57.23 2.73.11 3.02.74.81 1.19 1.84 1.19 3.1 0 4.41-2.69 5.39-5.25 5.67.42.36.8 1.07.8 2.16 0 1.56-.01 2.81-.01 3.19 0 .31.21.68.8.56A10.51 10.51 0 0023.5 12C23.5 5.65 18.35.5 12 .5z" />
+            </svg>
+            View on GitHub
+          </a>
+        </div>
 
-      <!-- Project 3 -->
-      <div class="project-card relative backdrop-blur-lg bg-opacity-20" data-aos="fade-up" data-aos-delay="200">
-        <div class="absolute inset-0 rounded-xl border border-cyan-500 opacity-20"></div>
-        <h3 class="text-2xl font-semibold mb-3 text-cyan-400">HomeDecor E-Commerce</h3>
-        <p class="text-gray-300 mb-6 text-sm leading-relaxed">
-          An e-commerce platform for home décor items with a responsive UI and cart management.
-        </p>
-        <a href="https://github.com/YASHATRE10/HomeDecor"
-           target="_blank" rel="noopener noreferrer"
-           class="flex items-center justify-center gap-2 px-4 py-2 bg-cyan-500 hover:bg-cyan-600 text-white rounded shadow-lg transition duration-300 transform hover:scale-105">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
-            <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.09 3.29 9.4 7.86 10.94.58.11.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.53-1.34-1.3-1.7-1.3-1.7-1.06-.72.08-.71.08-.71 1.18.08 1.8 1.21 1.8 1.21 1.04 1.78 2.74 1.27 3.4.97.11-.76.41-1.27.75-1.56-2.55-.29-5.23-1.28-5.23-5.68 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.45.11-3.02 0 0 .98-.31 3.21 1.18a11.2 11.2 0 012.92-.39c.99 0 1.99.13 2.92.39 2.22-1.49 3.21-1.18 3.21-1.18.63 1.57.23 2.73.11 3.02.74.81 1.19 1.84 1.19 3.1 0 4.41-2.69 5.39-5.25 5.67.42.36.8 1.07.8 2.16 0 1.56-.01 2.81-.01 3.19 0 .31.21.68.8.56A10.51 10.51 0 0023.5 12C23.5 5.65 18.35.5 12 .5z"/>
-          </svg>
-          View on GitHub
-        </a>
-      </div>
+        <!-- Project 3 -->
+        <div class="project-card relative backdrop-blur-lg bg-opacity-20" data-aos="fade-up" data-aos-delay="200">
+          <div class="absolute inset-0 rounded-xl border border-cyan-500 opacity-20"></div>
+          <h3 class="text-2xl font-semibold mb-3 text-cyan-400">HomeDecor E-Commerce</h3>
+          <p class="text-gray-300 mb-6 text-sm leading-relaxed">
+            An e-commerce platform for home décor items with a responsive UI and cart management.
+          </p>
+          <a href="https://github.com/YASHATRE10/HomeDecor" target="_blank" rel="noopener noreferrer"
+            class="flex items-center justify-center gap-2 px-4 py-2 bg-cyan-500 hover:bg-cyan-600 text-white rounded shadow-lg transition duration-300 transform hover:scale-105">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M12 .5C5.65.5.5 5.65.5 12c0 5.09 3.29 9.4 7.86 10.94.58.11.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.53-1.34-1.3-1.7-1.3-1.7-1.06-.72.08-.71.08-.71 1.18.08 1.8 1.21 1.8 1.21 1.04 1.78 2.74 1.27 3.4.97.11-.76.41-1.27.75-1.56-2.55-.29-5.23-1.28-5.23-5.68 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.45.11-3.02 0 0 .98-.31 3.21 1.18a11.2 11.2 0 012.92-.39c.99 0 1.99.13 2.92.39 2.22-1.49 3.21-1.18 3.21-1.18.63 1.57.23 2.73.11 3.02.74.81 1.19 1.84 1.19 3.1 0 4.41-2.69 5.39-5.25 5.67.42.36.8 1.07.8 2.16 0 1.56-.01 2.81-.01 3.19 0 .31.21.68.8.56A10.51 10.51 0 0023.5 12C23.5 5.65 18.35.5 12 .5z" />
+            </svg>
+            View on GitHub
+          </a>
+        </div>
 
-      <!-- Project 4 -->
-      <div class="project-card relative backdrop-blur-lg bg-opacity-20" data-aos="fade-up" data-aos-delay="300">
-        <div class="absolute inset-0 rounded-xl border border-cyan-500 opacity-20"></div>
-        <h3 class="text-2xl font-semibold mb-3 text-cyan-400">Weather Web App</h3>
-        <p class="text-gray-300 mb-6 text-sm leading-relaxed">
-          Real-time weather app integrated with OpenWeatherMap API & Leaflet.js.
-        </p>
-        <a href="https://github.com/YASHATRE10/Weather-application"
-           target="_blank" rel="noopener noreferrer"
-           class="flex items-center justify-center gap-2 px-4 py-2 bg-cyan-500 hover:bg-cyan-600 text-white rounded shadow-lg transition duration-300 transform hover:scale-105">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
-            <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.09 3.29 9.4 7.86 10.94.58.11.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.53-1.34-1.3-1.7-1.3-1.7-1.06-.72.08-.71.08-.71 1.18.08 1.8 1.21 1.8 1.21 1.04 1.78 2.74 1.27 3.4.97.11-.76.41-1.27.75-1.56-2.55-.29-5.23-1.28-5.23-5.68 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.45.11-3.02 0 0 .98-.31 3.21 1.18a11.2 11.2 0 012.92-.39c.99 0 1.99.13 2.92.39 2.22-1.49 3.21-1.18 3.21-1.18.63 1.57.23 2.73.11 3.02.74.81 1.19 1.84 1.19 3.1 0 4.41-2.69 5.39-5.25 5.67.42.36.8 1.07.8 2.16 0 1.56-.01 2.81-.01 3.19 0 .31.21.68.8.56A10.51 10.51 0 0023.5 12C23.5 5.65 18.35.5 12 .5z"/>
-          </svg>
-          View on GitHub
-        </a>
-      </div>
+        <!-- Project 4 -->
+        <div class="project-card relative backdrop-blur-lg bg-opacity-20" data-aos="fade-up" data-aos-delay="300">
+          <div class="absolute inset-0 rounded-xl border border-cyan-500 opacity-20"></div>
+          <h3 class="text-2xl font-semibold mb-3 text-cyan-400">Weather Web App</h3>
+          <p class="text-gray-300 mb-6 text-sm leading-relaxed">
+            Real-time weather app integrated with OpenWeatherMap API & Leaflet.js.
+          </p>
+          <a href="https://github.com/YASHATRE10/Weather-application" target="_blank" rel="noopener noreferrer"
+            class="flex items-center justify-center gap-2 px-4 py-2 bg-cyan-500 hover:bg-cyan-600 text-white rounded shadow-lg transition duration-300 transform hover:scale-105">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M12 .5C5.65.5.5 5.65.5 12c0 5.09 3.29 9.4 7.86 10.94.58.11.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.53-1.34-1.3-1.7-1.3-1.7-1.06-.72.08-.71.08-.71 1.18.08 1.8 1.21 1.8 1.21 1.04 1.78 2.74 1.27 3.4.97.11-.76.41-1.27.75-1.56-2.55-.29-5.23-1.28-5.23-5.68 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.45.11-3.02 0 0 .98-.31 3.21 1.18a11.2 11.2 0 012.92-.39c.99 0 1.99.13 2.92.39 2.22-1.49 3.21-1.18 3.21-1.18.63 1.57.23 2.73.11 3.02.74.81 1.19 1.84 1.19 3.1 0 4.41-2.69 5.39-5.25 5.67.42.36.8 1.07.8 2.16 0 1.56-.01 2.81-.01 3.19 0 .31.21.68.8.56A10.51 10.51 0 0023.5 12C23.5 5.65 18.35.5 12 .5z" />
+            </svg>
+            View on GitHub
+          </a>
+        </div>
 
-    </div>
-  </div>
-</section>
-
-<style>
-  .project-card {
-    background: rgba(30, 41, 59, 0.7);
-    padding: 1.8rem;
-    border-radius: 0.75rem;
-    box-shadow: 0 0 12px rgba(2, 132, 199, 0.6);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  .project-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 0 18px rgba(6, 182, 212, 0.9);
-  }
-</style>
-
-  </style>
-  <!-- Resume Section -->
-  <section id="resume"
-    class="pt-28 px-6 pb-16 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 min-h-screen flex flex-col items-center">
-    <div class="max-w-6xl w-full text-center" data-aos="fade-up">
-      <h2 class="text-4xl md:text-5xl font-bold mb-6 glow-text">📄 My Resume</h2>
-
-      <!-- Download Button -->
-      <a href="assets/Yash_CV.pdf" download
-        class="inline-block mb-8 px-6 py-2 bg-cyan-500 hover:bg-cyan-600 text-white rounded-lg shadow-lg transition duration-300">
-        📥 Download Resume
-      </a>
-
-      <!-- PDF Viewer -->
-      <div class="pdf-container w-full max-w-5xl mx-auto border border-cyan-600 rounded-lg shadow-lg overflow-hidden"
-        style="height: 80vh;">
-        <iframe src="assets/Yash_CV.pdf" width="100%" height="100%" style="border:none;"></iframe>
       </div>
     </div>
   </section>
 
   <style>
-    .pdf-container {
-      box-shadow: 0 0 15px rgba(6, 182, 212, 0.5);
-      background: rgba(30, 41, 59, 0.8);
+    .project-card {
+      background: rgba(30, 41, 59, 0.7);
+      padding: 1.8rem;
+      border-radius: 0.75rem;
+      box-shadow: 0 0 12px rgba(2, 132, 199, 0.6);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 0 18px rgba(6, 182, 212, 0.9);
     }
   </style>
+
+  </style><!-- Resume Section -->
+  <section id="resume" class="pt-28 pb-20 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900">
+    <div class="max-w-5xl mx-auto px-4 text-center" data-aos="fade-up">
+
+      <!-- Section Heading -->
+      <h2 class="text-4xl md:text-5xl font-bold mb-4 glow-text">📄 Resume</h2>
+      <p class="text-gray-400 mb-10">Here’s a snapshot of my experience and skills. You can preview or download my
+        resume below.</p>
+
+      <!-- Resume Preview Card -->
+      <div class="relative w-full md:w-3/4 lg:w-2/3 mx-auto group">
+        <!-- Resume Image Preview -->
+        <img src="assets/resume-preview.jpg" alt="Resume Preview"
+          class="rounded-xl shadow-lg border border-gray-700 group-hover:shadow-cyan-400/50 transition duration-300" />
+
+        <!-- Overlay -->
+        <div
+          class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 flex flex-col items-center justify-center gap-4 rounded-xl transition duration-300">
+          <a href="assets/Yash_CV.pdf" target="_blank" class="inline-block px-6 py-2 bg-gradient-to-r from-cyan-500 to-purple-600 
+          hover:from-cyan-400 hover:to-purple-500 text-white 
+          rounded-lg shadow-lg transition duration-300 transform hover:scale-105">
+            📄 View Full Resume
+          </a>
+
+          <a href="assets/Yash_CV.pdf" download
+            class="px-6 py-2 bg-blue-500 hover:bg-blue-600 text-white rounded-lg shadow transition">📥 Download
+            Resume</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tailwind Glow Text -->
+  <style>
+    .glow-text {
+      text-shadow: 0 0 5px #38bdf8, 0 0 10px #0ea5e9, 0 0 15px #0284c7;
+    }
+  </style>
+
+
   <!-- Contact Section -->
-  <!-- Contact Section -->
-<section id="contact" class="pt-28 pb-16 px-6 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 min-h-screen flex flex-col items-center">
-  <div class="max-w-4xl w-full text-center" data-aos="fade-up">
-    <h2 class="text-4xl md:text-5xl font-bold mb-6 glow-text">📬 Get in Touch</h2>
-    <p class="text-gray-400 mb-10">Whether you have a question, a project, or just want to say hi — my inbox is open!</p>
+  <section id="contact"
+    class="pt-28 pb-16 px-6 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 min-h-screen flex flex-col items-center">
+    <div class="max-w-4xl w-full text-center" data-aos="fade-up">
+      <h2 class="text-4xl md:text-5xl font-bold mb-6 glow-text">📬 Get in Touch</h2>
+      <p class="text-gray-400 mb-10">Whether you have a question, a project, or just want to say hi — my inbox is open!
+      </p>
 
-    <form id="contact-form" 
-          class="relative bg-gray-800 bg-opacity-40 p-8 rounded-2xl shadow-2xl border border-cyan-600 backdrop-blur-md space-y-6"
-          onsubmit="sendEmail(event)">
+      <form id="contact-form"
+        class="relative bg-gray-800 bg-opacity-40 p-8 rounded-2xl shadow-2xl border border-cyan-600 backdrop-blur-md space-y-6"
+        onsubmit="sendEmail(event)">
 
-      <div class="relative">
-        <input type="text" name="name" id="name" placeholder="Your Name"
-               class="peer w-full p-4 rounded-lg bg-transparent border border-gray-600 text-white
+        <div class="relative">
+          <input type="text" name="name" id="name" placeholder="Your Name" class="peer w-full p-4 rounded-lg bg-transparent border border-gray-600 text-white
                       focus:border-cyan-400 focus:ring focus:ring-cyan-500/40 outline-none transition" required>
-        <label for="name"
-               class="absolute left-4 top-4 text-gray-400 text-sm transition-all pointer-events-none"></label>
-      </div>
+          <label for="name"
+            class="absolute left-4 top-4 text-gray-400 text-sm transition-all pointer-events-none"></label>
+        </div>
 
-      <div class="relative">
-        <input type="email" name="email" id="email" placeholder="Your Email"
-               class="peer w-full p-4 rounded-lg bg-transparent border border-gray-600 text-white
+        <div class="relative">
+          <input type="email" name="email" id="email" placeholder="Your Email" class="peer w-full p-4 rounded-lg bg-transparent border border-gray-600 text-white
                       focus:border-cyan-400 focus:ring focus:ring-cyan-500/40 outline-none transition" required>
-        <label for="email"
-               class="absolute left-4 top-4 text-gray-400 text-sm transition-all pointer-events-none"></label>
-      </div>
+          <label for="email"
+            class="absolute left-4 top-4 text-gray-400 text-sm transition-all pointer-events-none"></label>
+        </div>
 
-      <div class="relative">
-        <input type="text" name="subject" id="subject" placeholder="Subject"
-               class="peer w-full p-4 rounded-lg bg-transparent border border-gray-600 text-white
+        <div class="relative">
+          <input type="text" name="subject" id="subject" placeholder="Subject" class="peer w-full p-4 rounded-lg bg-transparent border border-gray-600 text-white
                       focus:border-cyan-400 focus:ring focus:ring-cyan-500/40 outline-none transition" required>
-        <label for="subject"
-               class="absolute left-4 top-4 text-gray-400 text-sm transition-all pointer-events-none"></label>
-      </div>
+          <label for="subject"
+            class="absolute left-4 top-4 text-gray-400 text-sm transition-all pointer-events-none"></label>
+        </div>
 
-      <div class="relative">
-        <textarea name="message" id="message" placeholder="Your Message" rows="5"
-                  class="peer w-full p-4 rounded-lg bg-transparent border border-gray-600 text-white
-                         focus:border-cyan-400 focus:ring focus:ring-cyan-500/40 outline-none transition resize-none" required></textarea>
-        <label for="message"
-               class="absolute left-4 top-4 text-gray-400 text-sm transition-all pointer-events-none"></label>
-      </div>
+        <div class="relative">
+          <textarea name="message" id="message" placeholder="Your Message" rows="5" class="peer w-full p-4 rounded-lg bg-transparent border border-gray-600 text-white
+                         focus:border-cyan-400 focus:ring focus:ring-cyan-500/40 outline-none transition resize-none"
+            required></textarea>
+          <label for="message"
+            class="absolute left-4 top-4 text-gray-400 text-sm transition-all pointer-events-none"></label>
+        </div>
 
-      <button type="submit" 
-              class="w-full py-3 rounded-lg bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-white font-semibold shadow-lg transform hover:scale-[1.02] transition">
-        🚀 Send Message
-      </button>
-    </form>
+        <button type="submit"
+          class="w-full py-3 rounded-lg bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-white font-semibold shadow-lg transform hover:scale-[1.02] transition">
+          🚀 Send Message
+        </button>
+      </form>
 
-    <p id="status" class="mt-4 text-sm text-gray-400"></p>
-  </div>
-</section>
-
-<style>
-/* Hide label when field has value */
-input:not(:placeholder-shown) + label,
-textarea:not(:placeholder-shown) + label {
-  opacity: 0;
-  visibility: hidden;
-  transform: translateY(-10px);
-  transition: all 0.2s ease;
-}
-
-/* Label visible when empty or focused */
-input:placeholder-shown + label,
-textarea:placeholder-shown + label,
-input:focus + label,
-textarea:focus + label {
-  opacity: 1;
-  visibility: visible;
-  transform: translateY(0);
-}
-</style>
-
-      <!-- Status Message -->
       <p id="status" class="mt-4 text-sm text-gray-400"></p>
     </div>
+  </section>
+
+  <style>
+    /* Hide label when field has value */
+    input:not(:placeholder-shown)+label,
+    textarea:not(:placeholder-shown)+label {
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(-10px);
+      transition: all 0.2s ease;
+    }
+
+    /* Label visible when empty or focused */
+    input:placeholder-shown+label,
+    textarea:placeholder-shown+label,
+    input:focus+label,
+    textarea:focus+label {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+  </style>
+
+  <!-- Status Message -->
+  <p id="status" class="mt-4 text-sm text-gray-400"></p>
+  </div>
   </section>
 
   <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.6.4/dist/email.min.js"></script>
@@ -379,6 +414,44 @@ textarea:focus + label {
         });
     }
   </script>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 border-t border-gray-700 py-8">
+    <div class="container mx-auto px-6 text-center">
+
+      <!-- Social Icons -->
+      <div class="flex justify-center gap-6 mb-4">
+        <!-- GitHub -->
+        <a href="https://github.com/YASHATRE10" target="_blank" rel="noopener noreferrer"
+          class="text-gray-400 hover:text-cyan-400 transition transform hover:scale-110">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="currentColor" viewBox="0 0 24 24">
+            <path
+              d="M12 .5C5.65.5.5 5.65.5 12c0 5.09 3.29 9.4 7.86 10.94.58.11.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.53-1.34-1.3-1.7-1.3-1.7-1.06-.72.08-.71.08-.71 1.18.08 1.8 1.21 1.8 1.21 1.04 1.78 2.74 1.27 3.4.97.11-.76.41-1.27.75-1.56-2.55-.29-5.23-1.28-5.23-5.68 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.45.11-3.02 0 0 .98-.31 3.21 1.18a11.2 11.2 0 012.92-.39c.99 0 1.99.13 2.92.39 2.22-1.49 3.21-1.18 3.21-1.18.63 1.57.23 2.73.11 3.02.74.81 1.19 1.84 1.19 3.1 0 4.41-2.69 5.39-5.25 5.67.42.36.8 1.07.8 2.16 0 1.56-.01 2.81-.01 3.19 0 .31.21.68.8.56A10.51 10.51 0 0023.5 12C23.5 5.65 18.35.5 12 .5z" />
+          </svg>
+        </a>
+
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com/in/yashatre10" target="_blank" rel="noopener noreferrer"
+          class="text-gray-400 hover:text-cyan-400 transition transform hover:scale-110">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="currentColor" viewBox="0 0 24 24">
+            <path
+              d="M19 0h-14C2.24 0 0 2.24 0 5v14c0 2.76 2.24 5 5 5h14c2.77 0 5-2.24 5-5V5c0-2.76-2.23-5-5-5zM8.54 19H5.4V8.91h3.14V19zM6.97 7.69c-1.01 0-1.83-.82-1.83-1.83S5.96 4.03 6.97 4.03c1.01 0 1.83.82 1.83 1.83s-.82 1.83-1.83 1.83zm12.03 11.31h-3.14v-4.93c0-1.18-.02-2.7-1.64-2.7-1.64 0-1.89 1.28-1.89 2.6V19h-3.14V8.91h3.01v1.38h.04c.42-.79 1.44-1.63 2.96-1.63 3.16 0 3.74 2.08 3.74 4.78V19z" />
+          </svg>
+        </a>
+      </div>
+
+      <!-- Footer Text -->
+      <p class="text-gray-500 text-sm">
+        © <span id="year"></span> Yash Atre. All Rights Reserved.
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    // Auto-update year in footer
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
 
 
   <!-- Scripts -->
